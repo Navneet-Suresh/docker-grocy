@@ -43,3 +43,6 @@ Temporary Items
 .apdisk
 
 .history/
+
+# Directory created for storing container data
+data/
