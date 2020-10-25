@@ -1,0 +1,15 @@
+---
+version: "2"
+services:
+  grocy:
+    image: linuxserver/grocy
+    container_name: grocy
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - /home/ubuntu/Downloads/git-projects/docker-grocy/data:/config
+    ports:
+      - 9283:80
+    restart: unless-stopped
